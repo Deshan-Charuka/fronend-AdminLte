@@ -2,5 +2,6 @@
   "name": "frontEnd(AdminLTE)",
   "version": "1.0.0",
   "dependencies": {
+    "admin-lte": "^3.0.5"
   }
 }
