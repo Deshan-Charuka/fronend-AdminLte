@@ -5,4 +5,6 @@
 - Used technologies...
     - Admin-lte
     - Jquery
+    - Webpack
     - HTML
+    

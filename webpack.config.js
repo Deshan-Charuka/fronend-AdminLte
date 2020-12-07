@@ -2,9 +2,9 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports ={
+module.exports = {
     entry: './src/index.js',
-    output:{
+    output: {
         filename: 'main.bundle.min.js',
         path: __dirname + '/docs',
         publicPath: '',
@@ -13,13 +13,17 @@ module.exports ={
     module: {
         rules: [
             {
-                test:/[.]scss$/,
-                use:[MiniCssExtractPlugin.loader,'css-loader','sass-loader']
+                test: /[.]scss$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpeg|jpg|gif|svg|woff|woff2|eot|ttf|otf)$/,
                 type: 'asset/resource'
-              }
+            },
+            {
+                test: /\.min\.js$/,
+                use: ['script-loader']
+            }
         ]
     },
     plugins: [
