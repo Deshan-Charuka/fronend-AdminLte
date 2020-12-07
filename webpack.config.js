@@ -6,7 +6,7 @@ module.exports ={
     entry: './src/index.js',
     output:{
         filename: 'main.bundle.min.js',
-        path: __dirname + '/dist',
+        path: __dirname + '/docs',
         publicPath: '',
         assetModuleFilename: 'assert/[hash][ext][query]'
     },
